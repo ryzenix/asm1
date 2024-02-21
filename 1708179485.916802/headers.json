@@ -1,0 +1,20 @@
+{
+    "Status-Code": 200,
+    "Content-Type": "text/html",
+    "Connection": "keep-alive",
+    "Cache-Control": "public,max-age=14400,public",
+    "Last-Modified": "Wed, 14 Feb 2024 12:37:26 GMT",
+    "ETag": "W/\"07a490425fda1:0\"",
+    "Server": "Microsoft-IIS/10.0",
+    "X-Powered-By": "ASP.NET",
+    "Content-Security-Policy": "frame-ancestors 'self' https://mycourses.w3schools.com;",
+    "X-Content-Security-Policy": "frame-ancestors 'self' https://mycourses.w3schools.com;",
+    "Date": "Sat, 17 Feb 2024 10:41:55 GMT",
+    "Content-Encoding": "gzip",
+    "Vary": "Accept-Encoding",
+    "X-Cache": "Hit from cloudfront",
+    "Via": "1.1 563e25ff4039f663425caf2d104a488e.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Pop": "HKG62-C2",
+    "X-Amz-Cf-Id": "_2UXRgbsZIuzs4GVcrtBz6WEgNYjjhrboVzuM75MuDGSzqVrKLR5Yw==",
+    "Age": "13112"
+}
