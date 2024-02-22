@@ -6,6 +6,8 @@ body {
     padding: 0;
 }
 
+
+
 nav {
     display: block;
     box-sizing: border-box;
@@ -83,7 +85,7 @@ main article {
     display: flex;
 }
 
-main section {
+.homesection section {
     flex: 1;
     margin: 20px 20px 20px 20px;
     padding: 10px 10px 20px 20px;
@@ -95,7 +97,7 @@ main section {
     width: 22%;
     float: right;
     margin: 0 20px 30px 30px;
-    padding: 10px 10px 5px 13px;
+    padding: 10px 10px 5px 13px !important;
     position: sticky;
     position: -webkit-sticky;
     top: 0;
@@ -283,4 +285,32 @@ select {
 
 #info {
     font-weight: 600;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Raleway", sans-serif
+}
+
+body,
+html {
+    height: 100%;
+    line-height: 1.8;
+}
+
+/* Full height image header */
+.banner {
+    background-position: center;
+    background-size: cover;
+    background-image: url("images/banner.jpg");
+    min-height: 100%;
+}
+
+.w3-bar .w3-button {
+    padding: 16px;
 }
