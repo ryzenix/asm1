@@ -1,316 +1,201 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap');
-body {
-    min-width: 700px;
-    overflow: auto;
+html, body {
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
-}
-
-
-
-nav {
-    display: block;
-    box-sizing: border-box;
-    margin-bottom: 30px;
-    padding-top: 10px;
-    padding-left: 50px;
-}
-
-nav .logo {
-    float: left;
-    height: 60px;
-}
-
-nav ul {
-    display: inline-block;
-    list-style-type: none;
-    margin: 25px 0 0 30px;
-}
-
-nav ul li {
-    display: inline-block;
-    box-sizing: border-box;
-    margin-right: 50px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: 'Nunito', sans-serif;
-    font-size: 25px;
-    color: black;
-    line-height: 4px;
-    transition: .3s opacity;
-}
-
-nav ul li a:hover {
-    opacity: .6
-}
-
-.banner {
-    box-sizing: border-box;
-    height: fit-content;
-    background-image: url('../images/banner.jpg');
-    background-size: cover;
-    /* padding: 50px 0 0 50px; */
-    /* overflow: auto; */
-}
-
-.banner h1,
-.banner p {
-    font-family: 'Nunito', sans-serif;
-    color: white;
-}
-
-.banner h1 {
-    margin-bottom: 40px;
-    font-size: 60px;
-    font-weight: 500;
-}
-
-.banner p {
-    line-height: 30px;
-    font-size: 20px;
-}
-
-main article {
-    width: 65%;
-    margin: 0 20px 20px 20px;
-    padding: 10px 10px 20px 20px;
-    box-sizing: border-box;
-    border-radius: 10px;
-}
-
-.homesection {
-    display: flex;
-}
-
-.homesection section {
-    flex: 1;
-    margin: 20px 20px 20px 20px;
-    padding: 10px 10px 20px 20px;
-    box-sizing: border-box;
-    border-radius: 10px;
-}
-
-.sidebar {
-    width: 22%;
-    float: right;
-    margin: 0 20px 30px 30px;
-    padding: 10px 10px 5px 13px !important;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-}
-
-main article,
-.sidebar, main section {
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    transition: .3s box-shadow;
-}
-
-main article:hover,
-.sidebar:hover, main section {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-main article h2,
-main article li,
-main article p:not(.error),
-main section h2,
-main section li,
-main section p:not(.error),
-main article figure figcaption,
-tr>td,
-.sidebar h2,
-.sidebar p {
-    font-family: 'Nunito', sans-serif;
-}
-
-main article h2,
-legend {
-    font-size: 35px;
-}
-
-.sidebar h2 {
-    font-size: 25px;
-}
-
-.sidebar p {
-    line-height: 30px;
-}
-
-.sidebar img {
-    width: 100%;
-}
-
-main article p:not(.error),
-main article li {
-    line-height: 30px;
-    font-size: 20px;
-}
-
-main article li {
-    margin-bottom: 5px;
-}
-
-main article img {
-    width: 70%;
-}
-
-main article a {
-    color: black
-}
-
-main article figure img {
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-main article figure figcaption {
-    text-align: center;
-}
-
-fieldset {
-    border: none;
-    margin: inherit;
-    padding: inherit;
-}
-
-footer {
-    padding: 20px 0 40px 350px;
-    box-sizing: border-box;
-    background-color: #696969;
-    overflow: auto;
-    display: flex;
-}
-
-footer ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-footer section {
-    display: inline-block;
-    margin-right: 200px;
-    flex: 1
-}
-
-footer section h2,
-footer section li,
-footer section li a {
-    font-family: 'Nunito', sans-serif;
-    color: white;
-}
-
-footer section h2 {
-    font-weight: 500;
-    font-size: 30px;
-}
-
-table {
-    color: #06425C;
-    border-spacing: 0;
-    width: 100%;
-}
-
-tr>td {
-    box-sizing: border-box;
-    height: 70px;
-    text-align: left;
-    line-height: 40px;
-    font-size: 20px;
-}
-
-td:first-child {
-    min-width: 100px;
-    width: 20%;
-}
-
-
-/* td:last-child+td {
-    width: 70%;
-} */
-
-form td {
-    user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-}
-
-select option,
-select,
-input {
-    margin: 0;
-    font-size: 18px;
-    font-family: 'Roboto', sans-serif;
-}
-
-input[type=text] {
-    width: 50%;
-    height: 50%;
-}
-
-input[type=submit] {
-    border: none;
-    color: white;
-    background-color: #43A047;
-    width: 100px;
-    height: 50%;
-    border-radius: 20px;
-}
-
-input[type=submit]:hover {
-    background-color: #2b662d;
-}
-
-select {
-    width: 60%;
-    height: 60%;
-}
-
-.error {
-    margin: 0;
-    line-height: 20px;
-    height: 20px;
-    font-size: 15px;
-    padding-top: 3px;
-    color: red;
-    font-family: 'Roboto', sans-serif;
-    display: none;
-}
-
-#info {
-    font-weight: 600;
-}
-
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Raleway", sans-serif
-}
-
-body,
-html {
+    min-height: 100% !important;
     height: 100%;
-    line-height: 1.8;
 }
 
-/* Full height image header */
+p, h1, h2 {
+    margin: 0;
+}
+
+header {
+    height: 100%s;
+}
+
 .banner {
     background-position: center;
     background-size: cover;
-    background-image: url("images/banner.jpg");
-    min-height: 100%;
+    background-image: url("../images/banner.jpg");
+    height: 100vh;
 }
 
-.w3-bar .w3-button {
-    padding: 16px;
+.welcome {
+    box-sizing: border-box;
+    padding: 40vh 50px 40vh 50px;
+}
+
+.welcome h1,
+.welcome p {
+    font-family: sans-serif;
+    color: white;
+}
+
+.welcome h1 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 4.3rem;
+    font-weight: 500;
+}
+
+.welcome p {
+    margin: 0;
+    line-height: 30px;
+    font-size: 1.3rem;
+}
+
+button,
+input {
+    overflow: visible
+}
+
+button,
+select {
+    text-transform: none
+}
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+    outline: 1px dotted ButtonText
+}
+
+.btn,
+.button {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.bar-block .dropdown-hover .button,
+.bar-block .dropdown-click .button {
+    width: 100%;
+    text-align: left;
+    padding: 8px 16px
+}
+
+.bar .button {
+    white-space: normal
+}
+
+
+.btn,
+.button {
+    box-sizing: border-box;
+    margin-top: 25px;
+    border: 3px solid white;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: #000 !important;
+    background-color: #fff;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap
+}
+
+.button:hover {
+    border: 3px solid black;
+    background-color: blanchedalmond;
+}
+
+.about {
+    padding: 30px 50px 30px 50px;
+}
+
+
+.about h2 {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+}
+
+
+.features {
+    margin: 10px 0 10px 0;
+    border-collapse: separate;
+    display: flex;
+}
+
+.features .key-features {
+    flex: 1;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 15px 20px 15px 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.features .key-features p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.large {
+    font-weight: bold;
+    font-size: 1.7rem !important;
+}
+
+.features .key-features i {
+    font-size: 1.5rem;
+    display: block;
+    text-align: center; 
+}
+
+.service {
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../images/services/clouds.jpg");
+    padding: 60px 60px 60px 60px;
+    color: #fff;
+
+}
+
+.service h2 {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.service h2 strong {
+    font-family: "Borel", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.service-list {
+    display: flex;
+}
+
+.service-list section {
+    flex: 1;
+    text-align: center;
+}
+
+.service-list i {
+    font-size: 1.5rem;
+    display: block;
+    text-align: center; 
 }
