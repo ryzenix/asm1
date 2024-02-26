@@ -1,3 +1,9 @@
+/*
+Author: [Your Name]
+Purpose: This CSS file styles the SwinCloud website
+*/
+
+
 html,
 body {
     font-family: sans-serif;
@@ -331,7 +337,6 @@ footer {
     flex: 1;
 }
 
-/* CSS styles */
 .about-us {
     font-family: Arial, sans-serif;
     background-color: #f7f7f7;
