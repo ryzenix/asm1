@@ -147,7 +147,7 @@ button:-moz-focusring,
     overflow: hidden;
 }
 
-.features .key-features p {
+.features .key-features p, .service-list p {
     font-size: 1.2rem;
     text-align: center;
     margin-top: 10px;
@@ -158,20 +158,26 @@ button:-moz-focusring,
     font-size: 1.7rem !important;
 }
 
-.features .key-features i {
-    font-size: 1.5rem;
+.features .key-features i, .service-list i {
+    font-size: 2rem;
     display: block;
     text-align: center; 
 }
 
 .service {
-    height: 80vh;
+    min-width: 70vh;
+    max-width: fit-content;
     background-position: center;
     background-size: cover;
     background-image: url("../images/services/clouds.jpg");
     padding: 60px 60px 60px 60px;
     color: #fff;
-
+    box-sizing: content-box;
+    box-shadow: inset
+    0px 10px 10px rgba(0, 0, 0, 0.1),
+    0px -10px 10px rgba(0, 0, 0, 0.1),
+    10px 0px 10px rgba(0, 0, 0, 0.1),
+    -10px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .service h2 {
@@ -187,15 +193,26 @@ button:-moz-focusring,
 
 .service-list {
     display: flex;
+
 }
 
 .service-list section {
     flex: 1;
     text-align: center;
+    background-color: rgb(45, 65, 99, 0.3);
+    border: 3px solid white;
+    margin: 0 15px 0 15px;
+    padding: 15px 20px 15px 20px;
+    border-radius: 10px;
 }
 
-.service-list i {
-    font-size: 1.5rem;
-    display: block;
-    text-align: center; 
+.service-list section:hover {
+    background-color: rgb(45, 65, 99, 0.9);
+}
+
+.service-list img {
+    width: 100%;
+    height: 10vh;
+    margin-top: 20px;
+    border-radius: 10px;
 }
